@@ -36,13 +36,28 @@
 // console.log(sum);
 
 // problem -3 Largest number of array
-const numbers = [10, 2, 30, 4, 50, 23, 67, 89, 9];
-let max = numbers[0]; //10
+// const numbers = [10, 2, 30, 4, 50, 23, 67, 89, 9];
+// let max = numbers[0]; //10
 
-for (let i = 1; i < numbers.length; i++) {
-  if (numbers[i] > max) {
-    max = numbers[i];
+// for (let i = 1; i < numbers.length; i++) {
+//   if (numbers[i] > max) {
+//     max = numbers[i];
+//   }
+// }
+
+// console.log("max number is ", max);
+
+//problem-4 count Even and Odd numbers in array
+
+const arr = [10, 21, 9, 4, 25, 23, 67, 80, 19];
+let evenCount = 0;
+let oddCount = 0;
+
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 == 0) {
+    evenCount++;
+  } else {
+    oddCount++;
   }
 }
-
-console.log("max number is ", max);
+console.log(`Total Even = ${evenCount} and Total Odd = ${oddCount}`);
