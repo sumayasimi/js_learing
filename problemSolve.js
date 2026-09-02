@@ -49,15 +49,32 @@
 
 //problem-4 count Even and Odd numbers in array
 
-const arr = [10, 21, 9, 4, 25, 23, 67, 80, 19];
-let evenCount = 0;
-let oddCount = 0;
+// const arr = [10, 21, 9, 4, 25, 23, 67, 80, 19];
+// let evenCount = 0;
+// let oddCount = 0;
 
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i] % 2 == 0) {
-    evenCount++;
-  } else {
-    oddCount++;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] % 2 == 0) {
+//     evenCount++;
+//   } else {
+//     oddCount++;
+//   }
+// }
+// console.log(`Total Even = ${evenCount} and Total Odd = ${oddCount}`);
+
+//problem -5 Search A value exist or not
+
+const names = ["Spiderman", "Iron man", "Hulk", "Captain America", "Shang-Chi"];
+let found = false;
+
+for (let i = 0; i < names.length; i++) {
+  if (names[i] === "Antman") {
+    found = true;
   }
 }
-console.log(`Total Even = ${evenCount} and Total Odd = ${oddCount}`);
+
+if (found) {
+  console.log("Antman is Found");
+} else {
+  console.log("Antman is not found");
+}
