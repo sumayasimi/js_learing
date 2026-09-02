@@ -26,12 +26,23 @@
 //console.log("Your BMI is ", calculateBmi(52, 1.53).toFixed(2));
 
 //problem-2 sum of array
-const numbers = [10, 2, 30, 4, 50];
-let sum = 0;
+// const numbers = [10, 2, 30, 4, 50];
+// let sum = 0;
 
-for (let i = 0; i < numbers.length; i++) {
-  sum = sum + numbers[i];
+// for (let i = 0; i < numbers.length; i++) {
+//   sum = sum + numbers[i];
+// }
+
+// console.log(sum);
+
+// problem -3 Largest number of array
+const numbers = [10, 2, 30, 4, 50, 23, 67, 89, 9];
+let max = numbers[0]; //10
+
+for (let i = 1; i < numbers.length; i++) {
+  if (numbers[i] > max) {
+    max = numbers[i];
+  }
 }
 
-console.log(sum);
-
+console.log("max number is ", max);
